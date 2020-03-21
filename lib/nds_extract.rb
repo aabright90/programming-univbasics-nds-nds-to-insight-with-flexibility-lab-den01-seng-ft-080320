@@ -89,8 +89,12 @@ def movies_with_directors_set(source)
   # :name and :movies
   i = 0
   while i < source.length do
-  source[i][:movies]
-  
+    inner = 0
+    director_name = source[i][:name]
+    while inner < source[i][:movies].length do
+      source[i][:movies][inner]
+    inner  += 1  
+    end
   i += 1
   end
   # RETURN:
