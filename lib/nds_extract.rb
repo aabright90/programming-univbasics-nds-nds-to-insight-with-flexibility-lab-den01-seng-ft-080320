@@ -95,6 +95,7 @@ def movies_with_directors_set(source)
       source[i][:movies][inner][:director_name] = director_name
     inner  += 1
     end
+    arr << source[i][:movies]
   i += 1
   end
   # RETURN:
